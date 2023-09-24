@@ -41,3 +41,16 @@
           roles: [ ]
         }
       )
+
+#You can use updateUser() command to create the new role and privileges.
+
+#Solved Code
+
+#Change the password for readWriteInventoryUser to be 6c%dbe&7dc!ee1#d in the admin database:
+
+         db.updateUser(
+               "readWriteInventoryUser",
+               {
+                 pwd: "6c%dbe&7dc!ee1#d"
+               }
+            )
