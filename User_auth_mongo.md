@@ -45,3 +45,36 @@
       pwd: "a*0f7@2c6#b4f%$d6c^c7d",
       roles: [ "clusterAdmin" ]
     });
+
+
+# Roles in mongodb
+
+**userAdminAnyDatabase is meant only for admin database**
+
+**Creating a user with userAdmin role administrator on the inventory database:**
+
+    use admin
+    db.createUser({
+    user: "inventoryAdminUser",
+    pwd: "f46*5$2a3%ac&43f@17b",
+    roles: [
+    { role: "userAdmin", db: "inventory" }
+    ]    
+    });
+
+**Creating a user without any privileges:**
+
+    use admin
+    db.createUser({
+      user: "inventoryAdminUser",
+      pwd: "4lf12$@0af0e4*9#8af",
+      roles: [ ]
+    });
+
+**Granting a user the userAdmin privilege on the inventory database:**
+
+    db.grantRolesToUser(
+       "inventoryAdminUser",
+       [ { role: "userAdmin", db: "inventory" } ]
+    )
+
