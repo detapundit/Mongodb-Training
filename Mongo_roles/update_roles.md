@@ -26,3 +26,18 @@
        "emailReportsUser",
        [ { role: "read", db: "emailReports" } ]
     )
+
+#You can use createRole() command to create the new role and privileges.
+
+#Solved Code
+#Create the role insertAndFindTransactions with privileges on the transactions database, specifically on all collections where it has #the specific actions of insert and of find:
+
+      db.createRole(
+        {
+          role: "insertAndFindTransactions",
+          privileges: [
+            { resource: { db: "transactions", collection: "" }, actions: [ "insert", "find" ] },
+          ],
+          roles: [ ]
+        }
+      )
