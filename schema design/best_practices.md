@@ -9,3 +9,10 @@
         b. Throughput
         c. Efficiency
         d. Scalibility
+
+Schema anti-patterns
+
+        1. Over embedding
+        2. Over Normalization
+
+![image](https://github.com/detapundit/Mongodb/assets/144154692/3e9637dc-bece-45c8-88d2-50b1e2153b12)
