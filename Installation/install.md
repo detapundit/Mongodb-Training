@@ -24,11 +24,11 @@ Follow these steps to install MongoDB Community Edition using the yum package ma
 
 1. Create a /etc/yum.repos.d/mongodb-org-7.0.repo file so that you can install MongoDB directly using yum:
 
-   [mongodb-org-7.0]
-   name=MongoDB Repository
-   baseurl=https://repo.mongodb.org/yum/redhat/8/mongodb-org/7.0/x86_64/
-   gpgcheck=1
-   enabled=1
-   gpgkey=https://pgp.mongodb.com/server-7.0.asc
+       [mongodb-org-7.0]
+       name=MongoDB Repository
+       baseurl=https://repo.mongodb.org/yum/redhat/8/mongodb-org/7.0/x86_64/
+       gpgcheck=1
+       enabled=1
+       gpgkey=https://pgp.mongodb.com/server-7.0.asc
 
 
