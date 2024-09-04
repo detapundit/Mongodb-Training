@@ -7,11 +7,14 @@
             config.reset('enableTelemetry')
 
 Windows: `mongosh.cfg`, in the same directory as the `mongosh.exe` binary.
+
 macOS:
 /usr/local/etc/mongosh.conf
 /etc/mongosh.conf
 /opt/homebrew/etc/mongosh.conf
+
 Linux: /etc/mongosh.conf
+
 The mongosh.conf file uses YAML format. The following code shows how to configure the displayBatchSize, inspectDepth, and redactHistory options in mongosh.conf:
 
       mongosh: 
