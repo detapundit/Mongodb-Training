@@ -28,4 +28,4 @@
         ]
     )
 
-    db.getUser("financeUser")
+        db.getUser("financeUser")
