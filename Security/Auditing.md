@@ -1,4 +1,5 @@
 **Locate the Audit Log File**
+Audit file can be print in file, syslog, console(Linux,Macos)
 
     cat /etc/mongod.conf
     auditLog:
