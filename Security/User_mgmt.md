@@ -2,6 +2,10 @@
 2. Authorization
 3. Auditing
 
+
+RBAC - Role based access control
+Inbuilt roles - getRoles()
+
 Enable Access Control
 
     sudo vi /etc/mongod.conf
@@ -18,7 +22,7 @@ Create the User Administrator
 
     db.createUser(
     {
-    user: "globalUserAdmin",
+    user: "mongoAdmin",
     pwd: passwordPrompt(),
     roles: [
     { role: "userAdminAnyDatabase", db: "admin" }
