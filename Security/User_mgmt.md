@@ -29,7 +29,7 @@ Create the User Administrator
 
     quit()
 
-Verify the User Administrator
+Verify the User Administrator by login, localhost exception
 
     use admin
     db.getUsers()
