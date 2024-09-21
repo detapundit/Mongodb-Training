@@ -5,14 +5,15 @@
     use admin
     db.createUser(
       {
-        user: "analystUser",
+        user: "financeUser",
         pwd: passwordPrompt(),        
         roles: [
-          { role: "read", db: "sample_analytics" },
+          { role: "read", db: "sample_supplies" },
+          { role: "readWrite", db: "sample_analytics" },
         ]
       }
 
-      mongosh "mongodb://analystUser@localhost:27017/sample_analytics?authSource=admin"
+      mongosh "mongodb://financeUser@localhost:27017/sample_analytics?authSource=admin"
 
       db.accounts.findOne()
 
