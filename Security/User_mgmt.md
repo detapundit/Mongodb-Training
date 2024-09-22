@@ -33,6 +33,12 @@ Create the User Administrator
 
     quit()
 
+**Collection level privileges**
+
+        privileges: [
+          { resource: { db: "products", collection: "inventory" }, actions: [ "find", "update", "insert" ] },
+          { resource: { db: "products", collection: "orders" },  actions: [ "find" ] }
+
 Verify the User Administrator by login, localhost exception
 
     use admin
