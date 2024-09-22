@@ -1,4 +1,30 @@
-**RBAC**
+**RBAC - Role based access control**
+
+List of built-in roles - https://www.mongodb.com/docs/v5.2/reference/built-in-roles/
+
+MongoDB stores all role information in the admin.system.roles collection in the admin database.
+
+
+To create a role in a database, you must have:
+
+the createRole action on that database resource.
+
+the grantRole action on that database to specify privileges for the new role as well as to specify roles to inherit from.
+
+**User defined role (Sample)**
+
+        use admin
+        db.createRole(
+           {
+             role: "manageOpRole", 
+             privileges: [
+               { resource: { cluster: true }, actions: [ "killop", "inprog" ] },
+               { resource: { db: "", collection: "" }, actions: [ "killCursors" ] }
+             ],
+             roles: []
+           }
+        )
+
 
 **Assign a Built-In Role to a Database User**
 
