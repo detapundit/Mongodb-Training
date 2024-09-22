@@ -43,3 +43,10 @@ To verify if username password is correct
 
         use admin
         db.auth(<username>, <pwd>)
+
+
+**Modify password for a user**
+
+Syntax: db.changeUserPassword("username", "new_password")
+
+        db.changeUserPassword("reporting", "SOh3TbYhxuLiW8ypJPxmt1oOfL")
