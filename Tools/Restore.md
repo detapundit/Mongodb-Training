@@ -31,3 +31,8 @@ The following options can be used with the mongorestore command. Check out the M
     
     mongorestore --nsInclude="data.*" --nsFrom="data.$prefix$_$customer$" --nsTo="$customer$.$prefix$"
 
+     mongorestore "mongodb+srv://hawaii-dba-labs-user:nNVAWqNmiz22GV7J@instruqttest.3xfvk.mongodb.net" \
+      --drop --authenticationDatabase "admin" --gzip \
+      --archive=/sampledata/library.books.archive --nsFrom=library.books \
+      --nsTo=dba-labs.books_36fc6060_78d9_11ef_bfe2_879aeb2328c2
+
