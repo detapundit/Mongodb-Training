@@ -36,7 +36,8 @@ Create the User Administrator
 Verify the User Administrator by login, localhost exception
 
     use admin
-    db.getUsers()
+    db.getUsers() => List of users
+    db.getUser("reportsUser") => Particular user
 
 
 To verify if username password is correct 
