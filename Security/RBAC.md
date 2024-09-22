@@ -57,9 +57,3 @@ the grantRole action on that database to specify privileges for the new role as 
 
         db.getUser("financeUser")
 
-
-**Modify password for a user**
-
-Syntax: db.changeUserPassword("username", "new_password")
-
-        db.changeUserPassword("reporting", "SOh3TbYhxuLiW8ypJPxmt1oOfL")
