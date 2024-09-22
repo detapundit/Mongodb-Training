@@ -37,3 +37,9 @@ Verify the User Administrator by login, localhost exception
 
     use admin
     db.getUsers()
+
+
+To verify if username password is correct 
+
+        use admin
+        db.auth(<username>, <pwd>)
