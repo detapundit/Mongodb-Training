@@ -28,3 +28,7 @@ For differences between canonical and relaxed modes, see MongoDB Extended JSON (
     mongoexport --host="myReplicaSetName/mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com" --collection=events --db=reporting --out=events.json [additional options]
 
     mongoexport --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/reporting?replicaSet=myReplicaSetName&readPreference=secondary" --collection=events --out=events.json [additional options]
+
+
+    mongoexport --db sample_mflix --collection users --query '{ "name" : "Ned Stark"}' --type csv  --out export.csv -f name,email,password
+    mongoexport --db sample_mflix --collection users --query '{ "name" : "Ned Stark"}' --type csv  --out export.csv --jsonFormat canonical
