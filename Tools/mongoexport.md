@@ -31,4 +31,4 @@ For differences between canonical and relaxed modes, see MongoDB Extended JSON (
 
 
     mongoexport --db sample_mflix --collection users --query '{ "name" : "Ned Stark"}' --type csv  --out export.csv -f name,email,password
-    mongoexport --db sample_mflix --collection users --query '{ "name" : "Ned Stark"}' --type csv  --out export.csv --jsonFormat canonical
+    mongoexport --db sample_mflix --collection users --query '{ "name" : "Ned Stark"}'  --out export.json --jsonFormat canonical
