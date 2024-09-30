@@ -8,5 +8,5 @@ INFILE=/opt/moblize/dblist.txt
 while read -r LINE
 do
     printf '%s\n' "$LINE" >> /coll_size.log
-        mongo $LINE --host 172.31.1.44 --eval "db.drillerDashboardProfiles.totalSize()" >> /output.log
+        mongo $LINE --host 172.31.1.44 --eval "db.sampleColl.totalSize()" >> /output.log
 done < "$INFILE"
