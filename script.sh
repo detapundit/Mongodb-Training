@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Backup path
-BACKUPS_DIR="/opt/moblize/backup"
+BACKUPS_DIR="/opt/backup"
 
 # Define the input file
 INFILE=/root/dblist.txt
