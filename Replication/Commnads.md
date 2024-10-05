@@ -1,3 +1,8 @@
+        replication:
+           replSetName: "rs0"
+        net:
+           bindIp: localhost,<hostname(s)|ip address(es)>
+
 
 
     rs.initiate( {
