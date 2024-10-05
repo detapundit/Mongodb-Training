@@ -19,3 +19,7 @@ Oplog size is 5% of available disk space or max 50GB
     rs.printReplicationInfo()
     
     rs.printSecondaryReplicationInfo()
+
+    rs.conf()
+
+    rs.status()
