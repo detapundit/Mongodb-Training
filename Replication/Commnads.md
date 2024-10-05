@@ -6,7 +6,7 @@
 
 
     rs.initiate( {
-       _id : "myTest",
+       _id : "myMongoDB",
        members: [
           { _id: 0, host: "10.128.0.14:27017" },
           { _id: 1, host: "10.128.0.15:27017" },
