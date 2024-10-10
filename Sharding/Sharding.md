@@ -45,6 +45,18 @@ The choice of shard key affects the creation and distribution of chunks across t
 
 The ideal shard key allows MongoDB to distribute documents evenly throughout the cluster while also facilitating common query patterns.
 
+Hashed Sharding
+Hashed sharding uses either a single field hashed index or a compound hashed index as the shard key to partition data across your sharded cluster.
+
+![image](https://github.com/user-attachments/assets/1c2f4538-c9cc-4ae3-ad34-925b85123021)
+
+
+Ranged Sharding
+Given a collection using a monotonically increasing value X as the shard key, using ranged sharding results in a distribution of incoming inserts similar to the following:
+
+![image](https://github.com/user-attachments/assets/612072f6-c111-4a21-b63f-0551537339b4)
+
+
 When you choose your shard key, consider:
 
     the cardinality of the shard key - uniqueness
@@ -57,4 +69,12 @@ When you choose your shard key, consider:
     
     Shard Key Limitations
     
-    
+
+Shard Key Selection
+Ranged sharding is most efficient when the shard key displays the following traits:
+
+        Large Shard Key Cardinality
+        
+        Low Shard Key Frequency
+        
+        Non-Monotonically Changing Shard Keys
