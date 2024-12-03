@@ -1,0 +1,13 @@
+Explain
+
+Plan generation
+
+Check namespace
+Check parsed query
+Check case sensitive
+
+Plan effic
+Field name mismatch in index and query
+
+plan cache
+if still old is used, then drop old index
